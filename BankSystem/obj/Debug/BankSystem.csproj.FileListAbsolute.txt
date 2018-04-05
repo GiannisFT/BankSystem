@@ -1,0 +1,7 @@
+C:\Users\Giannis\source\repos\BankSystem\bin\Debug\BankSystem.exe.config
+C:\Users\Giannis\source\repos\BankSystem\bin\Debug\BankSystem.exe
+C:\Users\Giannis\source\repos\BankSystem\bin\Debug\BankSystem.pdb
+C:\Users\Giannis\source\repos\BankSystem\obj\Debug\BankSystem.csprojResolveAssemblyReference.cache
+C:\Users\Giannis\source\repos\BankSystem\obj\Debug\BankSystem.csproj.CoreCompileInputs.cache
+C:\Users\Giannis\source\repos\BankSystem\obj\Debug\BankSystem.exe
+C:\Users\Giannis\source\repos\BankSystem\obj\Debug\BankSystem.pdb
