@@ -95,15 +95,15 @@ namespace BankSystem
             Console.WriteLine("");
         }
 
-        public double Withdraw(double amount)
-        {
-            if (amount>0)
-            {
-                this.Balance -= amount;
-            }
-            else
-                Console.WriteLine("Cannot transfer zero or less!");
-            return Balance;
-        }
+        //public double Withdraw(double amount)
+        //{
+        //    if (amount>0)
+        //    {
+        //        this.Balance -= amount;
+        //    }
+        //    else
+        //        Console.WriteLine("Cannot transfer zero or less!");
+        //    return Balance;
+        //}
     }
 }

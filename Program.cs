@@ -29,12 +29,12 @@ namespace BankSystem
                         break;
                     case "3":
                         Console.Clear();
-                        Console.Write("From account number: \t");
-                        int from = int.Parse(Console.ReadLine());
-                        Console.Write("Enter amount: \t\t");
-                        double amount = double.Parse(Console.ReadLine());
-                        Console.Write("To account number: \t");
-                        int to = int.Parse(Console.ReadLine());
+                        //Console.Write("From account number: \t");
+                        //int from = int.Parse(Console.ReadLine());
+                        //Console.Write("Enter amount: \t\t");
+                        //double amount = double.Parse(Console.ReadLine());
+                        //Console.Write("To account number: \t");
+                        //int to = int.Parse(Console.ReadLine());
                         //foreach (Account acc in accountlist)
                         //{
                         //    if (acc.Number==from)
@@ -53,13 +53,7 @@ namespace BankSystem
                         break;
                     case "8":
                         Console.Clear();
-                        //List<double> blist = new List<double>();
-                        //foreach (var item in accountlist)
-                        //{
-                        //    blist.Add(item.Balance);
-                        //}
-                        //double vault = blist.Sum();
-                        //Console.WriteLine("The vault contains: "+vault+"\n");
+                        
                         break;
                     case "x":
                     case "X":
