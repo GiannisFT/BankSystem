@@ -44,6 +44,8 @@
     <Compile Include="Account.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Read_Write_toFile.cs" />
+    <Compile Include="Transfer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -11,44 +11,48 @@ namespace BankSystem
     {
         static void Main(string[] args)
         {
-            var accountlist = new List<Account>();
+            Account test = new Account();
             bool exit = false;
             while (!exit)
             {
-                Console.WriteLine("[1] Add account \n[6] Show accounts \n[7] Close account \n[8] Show bank vault \n[X] Close the program");
-                Console.Write("\nChoose an option: ");
+                Console.WriteLine("[1] Add account \n[2] Deposit/Withdrawal \n[3] Transfer amount \n[6] Show accounts \n[7] Close account \n[8] Show bank vault \n[X] Close the program");
+                Console.Write("\nChoose an option: \n");
                 string option = Console.ReadLine();
                 switch (option)
                 {
                     case "1":
                         Console.Clear();
-                        accountlist.Add(Account.Add());
+                        test.AddAccount();
+                        break;
+                    case "2":
+                        Console.Write("Type D or W:\t");
+                        string dw = Console.ReadLine();
+                        switch (dw)
+                        {
+                            case "d":
+                            case "D":   Transfer.Deposit();
+                                break;
+                            case "w":
+                            case "W":   Transfer.Withdraw();
+                                break;
+                            default: Console.Clear();
+                                break;
+                        }
+                        break;
+                    case "3":
+                        Transfer.Transaction();
                         break;
                     case "6":
                         Console.Clear();
-                        foreach (Account acc in accountlist)
-                        {
-                            Console.Write("{0}\t{1}\t{2}\t{3}", acc.accountNumber, acc.accountType, acc.accountOwner, acc.accountBalance);
-                            Console.WriteLine("");
-                        }
-                        Console.WriteLine("");
+                        test.Display();
                         break;
                     case "7":
                         Console.Clear();
-                        Console.Write("Enter account number: ");
-                        int aNum = int.Parse(Console.ReadLine());
-                        accountlist.RemoveAll(r => r.accountNumber == aNum);
-                        Console.WriteLine("");
+                        test.DeleteAccount();
                         break;
                     case "8":
                         Console.Clear();
-                        List<double> blist = new List<double>();
-                        foreach (var item in accountlist)
-                        {
-                            blist.Add(item.accountBalance);
-                        }
-                        double vault = blist.Sum();
-                        Console.WriteLine(vault+"\n");
+                        Transfer.Vault();
                         break;
                     case "x":
                     case "X":
